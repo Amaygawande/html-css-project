@@ -1,0 +1,163 @@
+/* General styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styling */
+header {
+    background-color: #0077b6;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* Navigation styling */
+nav a {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #48cae4;
+    color: #333;
+    border-radius: 5px;
+}
+
+header nav {
+    margin-top: 10px;
+}
+
+/* Section styling */
+section {
+    padding: 50px;
+    background-color: white;
+    margin: 30px auto;
+    max-width: 1200px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+}
+
+section h2 {
+    font-size: 2rem;
+    color: #0077b6;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #48cae4;
+    padding-bottom: 10px;
+}
+
+/* Links in sections */
+ul {
+    list-style: none;
+}
+
+ul li {
+    padding: 10px 0;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #0077b6;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+ul li a:hover {
+    color: #48cae4;
+    text-decoration: underline;
+}
+
+/* Footer styling */
+footer {
+    background-color: #0077b6;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Adding responsiveness */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav a {
+        font-size: 0.9rem;
+        margin: 0 10px;
+    }
+
+    section {
+        padding: 30px;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+}
+
+/* Button styles for more interaction */
+button {
+    background-color: #0077b6;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background-color: #48cae4;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Animations for smoother transitions */
+section {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
